@@ -1,0 +1,40 @@
+name: hum_shajar
+description: "Hum Shajar (ہم شجر) — Urdu poetry by Haris Bilal"
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.3.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.6
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
+
+  # ---------------------------------------------------------------
+  # IMPORTANT — read FONT_SETUP.md before building.
+  # You must place the real "Jameel Noori Nastaleeq.ttf" file at
+  # assets/fonts/JameelNooriNastaleeq.ttf yourself. It cannot be
+  # bundled here because of font licensing — see FONT_SETUP.md for
+  # exactly where to download it from.
+  # ---------------------------------------------------------------
+  fonts:
+    - family: JameelNooriNastaleeq
+      fonts:
+        - asset: assets/fonts/JameelNooriNastaleeq.ttf
+    # Optional bold/second weight — only keep this block if you also
+    # place a bold variant file. Otherwise delete it.
+    # - family: JameelNooriNastaleeqBold
+    #   fonts:
+    #     - asset: assets/fonts/JameelNooriNastaleeqBold.ttf
+
+  assets:
+    - assets/images/
